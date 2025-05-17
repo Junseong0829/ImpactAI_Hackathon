@@ -8,13 +8,13 @@ function Article(){
                 <h1 style={{fontSize:"50px"}}>도널드 트럼프의 관세 정책</h1>
                 <div className="container">
                    <div className="left">
-                    From the Left
+                    <span style={{fontSize:"25px"}}>From the Left</span>
                    </div>
                    <div className="center">
-                    From the Center
+                    <span style={{fontSize:"25px"}}>From the Center</span>
                    </div>
                    <div className="right">
-                    From the Right
+                    <span style={{fontSize:"25px"}}>From the Right</span>
                    </div>
                 </div>
                 <div className="container">

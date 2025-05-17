@@ -11,65 +11,65 @@ import "./DiscussionSection.css";
 function DiscussionSection(){
     return(
         <>
-            <h2 style={{marginBottom:"0px", paddingLeft:"40px", fontSize:"36px", fontWeight:"800"}}>토론이 활발해요 🔥</h2>
-            <div className="container">
+            <h2 style={{marginBottom:"0px", paddingLeft:"20px", fontSize:"36px", fontWeight:"800"}}>토론이 활발해요 🔥</h2>
+            <div className="container" style={{gap:"0px"}}>
                 <div className="box">
                     <img alt="사진" src={img2} className="image"/>
                     <h3>러-우 전쟁 종전 협상</h3>
-                    <p>36명이 AI와 토론 중</p>
+                    <p style={{margin:"0px"}}>36명이 AI와 토론 중</p>
                 </div>
                 <div className="box">
                     <img alt="사진" src={img3} className="image"/>
                     <h3>윤석열 대통령 탄핵</h3>
-                    <p>34명이 AI와 토론 중</p>
+                    <p style={{margin:"0px"}}>34명이 AI와 토론 중</p>
                 </div>
                 <div className="box">
                     <img alt="사진" src={img4} className="image"/>
                     <h3>중국-대만 갈등</h3>
-                    <p>12명이 AI와 토론 중</p>
+                    <p style={{margin:"0px"}}>12명이 AI와 토론 중</p>
                 </div>
             </div>
-            <h2 style={{marginTop:"0px", marginBottom:"0px", paddingLeft:"40px", fontSize:"36px", fontWeight:"800"}}>의견 차이가 심해요 😡</h2>
-            <div className="container">
+            <h2 style={{marginTop:"0px", marginBottom:"0px", paddingLeft:"20px", fontSize:"36px", fontWeight:"800"}}>의견 차이가 심해요 😡</h2>
+            <div className="container" style={{gap:"0px"}}>
                 <div className="box">
                     <img alt="사진" src={img5} className="image"/>
                     <h3>21대 대통령 선거</h3>
-                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
+                    <div style={{ marginTop: "0px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="left" src={left} width={15} />
-                            <span>1,190명</span>
+                            <p style={{margin:"0px"}}>1,190명</p>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="right" src={right} width={15} />
-                            <span>1,127명</span>
+                            <p style={{margin:"0px"}}>1,127명</p>
                         </div>
                     </div>
                 </div>
                 <div className="box">
                     <img alt="사진" src={img6} className="image"/>
                     <h3>윤석열 국민의 힘 탈당</h3>
-                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
+                    <div style={{ marginTop: "0px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="left" src={left} width={15} />
-                            <span>1,080명</span>
+                            <p style={{margin:"0px"}}>1,080명</p>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="right" src={right} width={15} />
-                            <span>1,120명</span>
+                            <p style={{margin:"0px"}}>1,120명</p>
                         </div>
                     </div>
                 </div>
                 <div className="box">
                     <img alt="사진" src={img7} className="image"/>
                     <h3>중국-대만 갈등</h3>
-                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
+                    <div style={{ marginTop: "0px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="left" src={left} width={15} />
-                            <span>3,190명</span>
+                            <p style={{margin:"0px"}}>3,190명</p>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="right" src={right} width={15} />
-                            <span>2,472명</span>
+                            <p style={{margin:"0px"}}>2,472명</p>
                         </div>
                     </div>
                 </div>

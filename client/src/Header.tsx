@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useAuth } from './context/AuthContext';
 import logo from "./assets/Augora.png";
 import "./Header.css";
 
 function Header(){
-    return(
+  const {isLoggedIn, logout } = useAuth();
+
+  return(
     <header className="custom-header">
       <div className="header-container">
         <div className="logo">
@@ -12,8 +15,14 @@ function Header(){
           </Link>
         </div>
         <div className="nav-links">
-          <Link to="/login" className="nav-button">로그인</Link>
-          <Link to="/register" className="nav-button signup">회원가입</Link>
+          {isLoggedIn ? (
+            <p>a</p>
+          ) : (
+            <>
+              <Link to="/login" className="nav-button">로그인</Link>
+              <Link to="/register" className="nav-button signup">회원가입</Link>
+            </>
+          )}
         </div>
       </div>
     </header>

@@ -54,7 +54,7 @@ function NewsSlider() {
                 <div className="overlay2">
                   <h2>{item.title}</h2>
                     <Link to="/article1">
-                      <button>기사 보기 ›</button>
+                      <button style={{marginTop:"5px"}}>기사 보기 ›</button>
                     </Link>
                 </div>
               </div>
