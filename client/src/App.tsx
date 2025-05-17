@@ -1,19 +1,19 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from "./home/Header";
+import Body from "./home/Body";
+import Login from "./pages/Login";  
+import Register from "./pages/Register";
 
 function App() {
-  const [message, setMessage] = React.useState('');
-
-  React.useEffect(() => {
-    fetch('/api')
-      .then(res => res.json())
-      .then(data => setMessage(data.message));
-  }, []);
-
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>ImpactAI Hackathon</h1>
-      <p>백엔드 메시지: {message}</p>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Body />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </>
   );
 }
 
