@@ -11,7 +11,7 @@ import "./DiscussionSection.css";
 function DiscussionSection(){
     return(
         <>
-            <h2 style={{marginBottom:"0px", paddingLeft:"40px", fontSize:"35px", fontWeight:"800"}}>⌷토론이 활발해요 🔥</h2>
+            <h2 style={{marginBottom:"0px", paddingLeft:"40px", fontSize:"36px", fontWeight:"800"}}>토론이 활발해요 🔥</h2>
             <div className="container">
                 <div className="box">
                     <img alt="사진" src={img2} className="image"/>
@@ -29,12 +29,12 @@ function DiscussionSection(){
                     <p>12명이 AI와 토론 중</p>
                 </div>
             </div>
-            <h2 style={{marginTop:"0px", marginBottom:"0px", paddingLeft:"40px", fontSize:"35px", fontWeight:"800"}}>⌷의견 차이가 심해요 😡</h2>
+            <h2 style={{marginTop:"0px", marginBottom:"0px", paddingLeft:"40px", fontSize:"36px", fontWeight:"800"}}>의견 차이가 심해요 😡</h2>
             <div className="container">
                 <div className="box">
                     <img alt="사진" src={img5} className="image"/>
                     <h3>21대 대통령 선거</h3>
-                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px" }}>
+                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="left" src={left} width={15} />
                             <span>1,190명</span>
@@ -48,7 +48,7 @@ function DiscussionSection(){
                 <div className="box">
                     <img alt="사진" src={img6} className="image"/>
                     <h3>윤석열 국민의 힘 탈당</h3>
-                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px" }}>
+                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="left" src={left} width={15} />
                             <span>1,080명</span>
@@ -62,7 +62,7 @@ function DiscussionSection(){
                 <div className="box">
                     <img alt="사진" src={img7} className="image"/>
                     <h3>중국-대만 갈등</h3>
-                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px" }}>
+                    <div style={{ marginTop: "5px",display: "flex", alignItems: "center", gap: "15px", color:"gray" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                             <img alt="left" src={left} width={15} />
                             <span>3,190명</span>
