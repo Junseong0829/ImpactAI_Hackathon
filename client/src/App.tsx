@@ -5,6 +5,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Article from "./pages/Article/Article";
 import ChatUI from "./pages/Chat/Chat";
+import MyPage from "./pages/MyPage/MyPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/article1" element={<Article />} />
         <Route path="/chat" element={<ChatUI />} />
+        <Route path="/mypage" element={<MyPage />} />
       </Routes>
     </>
   );
