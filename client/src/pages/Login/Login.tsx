@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
 
     try{
-      const res = await fetch('http://10.32.141.244:5100/auth/login', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/auth/login`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({

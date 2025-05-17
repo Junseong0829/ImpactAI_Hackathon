@@ -16,7 +16,7 @@ function Header(){
         </div>
         <div className="nav-links">
           {isLoggedIn ? (
-            <p>a</p>
+            <Link to="/mypage" className="nav-button">My Page</Link>
           ) : (
             <>
               <Link to="/login" className="nav-button">로그인</Link>

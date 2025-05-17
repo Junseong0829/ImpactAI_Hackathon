@@ -1,7 +1,11 @@
 import React from "react";
+import { useAuth } from '../../context/AuthContext';
 import "./MyPage.css";
+import img17 from "../../assets/img17.png";
+import img18 from "../../assets/img18.png";
 
 const MyPage: React.FC = () => {
+  const {logout} = useAuth();
   return (
     <div className="mypage-container">
       {/* 헤더는 제외됨 */}
@@ -19,7 +23,7 @@ const MyPage: React.FC = () => {
         <div className="profile-badge">
           <img
             className="badge-icon"
-            src="https://sdmntprwestcentralus.oaiusercontent.com/files/00000000-a4f4-61fb-9cff-cb31893a3c47/raw?se=2025-05-17T19%3A31%3A29Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=e9d2f8b1-028a-4cff-8eb1-d0e66fbefcca&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-17T18%3A23%3A11Z&ske=2025-05-18T18%3A23%3A11Z&sks=b&skv=2024-08-04&sig=2VOMcbP1JQfiLihfR2mOMki4QsHRRG0zWHjtzWldkeU%3D"
+            src={img17}
             alt="배지"
           />
           <div className="badge-text">
@@ -31,7 +35,7 @@ const MyPage: React.FC = () => {
         <div className="profile-badge">
           <img
             className="badge-icon"
-            src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-a128-622f-8061-f6eaf164ddf2/raw?se=2025-05-17T19%3A32%3A33Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=e9d2f8b1-028a-4cff-8eb1-d0e66fbefcca&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-17T01%3A30%3A49Z&ske=2025-05-18T01%3A30%3A49Z&sks=b&skv=2024-08-04&sig=h8/Ixw4psIbteRyyffGWCbaWGWPG0YwsimjfitZHqL4%3D"
+            src={img18}
             alt="배지"
           />
           <div className="badge-text">
@@ -84,7 +88,10 @@ const MyPage: React.FC = () => {
       </section>
 
       <section className="topic-section">
-        <h2>토론 기록 보기 💬</h2>
+        <h2>토론 기록 보기 <span onClick={() => {
+          logout();
+          location.href="/";
+        }}>💬</span></h2>
         <div className="topic-item">
           <img
             className="topic-thumbnail"
