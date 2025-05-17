@@ -9,6 +9,7 @@ import ChatUI from "./pages/Chat/Chat";
 import LeftDetail from './pages/Article/Detail/LeftDetail';
 import CenterDetail from './pages/Article/Detail/CenterDetail';
 import RightDetail from './pages/Article/Detail/RightDetail';
+import MyPage from "./pages/MyPage/MyPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/article1/centerDetail1" element={<CenterDetail />} />
         <Route path="/article1/rightDetail1" element={<RightDetail />} />
         <Route path="/chat" element={<ChatUI />} />
+        <Route path="/mypage" element={<MyPage />} />
       </Routes>
     </div>
   );

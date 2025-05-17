@@ -25,15 +25,12 @@ const ChatUI: React.FC = () => {
     setMessages(newMessages);
     setInput("");
     setLoading(true);
+    const api_url = import.meta.env.VITE_API_URL;
     try {
-      const response = await axios.post(
-        // `${api_url}/chat`,
-        "http://13.209.95.133:5100/chat",
-        {
-          user_id: "dlakd",
-          content: input,
-        }
-      );
+      const response = await axios.post(`${api_url}/chat`, {
+        user_id: "dlakd",
+        content: input,
+      });
 
       setMessages((prev) => [
         ...prev,
