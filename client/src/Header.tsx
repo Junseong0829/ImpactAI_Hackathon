@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from "../assets/Augora.png";
+import logo from "./assets/Augora.png";
 import "./Header.css";
 
 function Header(){
@@ -8,7 +8,7 @@ function Header(){
       <div className="header-container">
         <div className="logo">
           <Link to="/" className="logo-link">
-            <img alt="augora" src={logo} width="130"/>
+            <img alt="augora" src={logo} width="110"/>
           </Link>
         </div>
         <div className="nav-links">

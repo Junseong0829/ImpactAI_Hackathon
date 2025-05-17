@@ -1,35 +1,34 @@
-import React from "react";
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./NewsSlider.css"; // 스타일 파일 따로 관리
+import "./NewsSlider.css";
+import img1 from "../../assets/img1.png";
+import img2 from "../../assets/img2.png";
+import img3 from "../../assets/img3.png";
+import img4 from "../../assets/img4.png";
 
 const newsItems = [
   {
     title: "도널드 트럼프의 관세 정책",
-    image: "/assets/news1.jpg",
+    image: img1,
     link: "https://example.com/article1"
   },
   {
     title: "러-우 전쟁 종전 협상",
-    image: "/assets/news2.jpg",
+    image: img2,
     link: "https://example.com/article2"
   },
   {
     title: "윤석열 대통령 탄핵",
-    image: "/assets/news3.jpg",
+    image: img3,
     link: "https://example.com/article3"
   },
   {
     title: "중국-대만 갈등",
-    image: "/assets/news3.jpg",
+    image: img4,
     link: "https://example.com/article3"
-  },
-  {
-    title: "21대 대통령 선거",
-    image: "/assets/news3.jpg",
-    link: "https://example.com/article3"
-  },
+  }
 ];
 
 function NewsSlider() {
@@ -54,9 +53,9 @@ function NewsSlider() {
               <div className="overlay">
                 <div className="overlay2">
                   <h2>{item.title}</h2>
-                    <a href={item.link} target="_blank" rel="noopener noreferrer">
-                      <button>기사 보기 →</button>
-                    </a>
+                    <Link to="/article1">
+                      <button>기사 보기 ›</button>
+                    </Link>
                 </div>
               </div>
             </div>

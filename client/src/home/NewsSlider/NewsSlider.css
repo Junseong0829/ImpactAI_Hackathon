@@ -18,10 +18,11 @@
   width: 80%;
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom:20px;
 }
 
 .news-slide {
-  height: 300px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -43,22 +44,24 @@
 }
 .overlay2{
   padding:20px;
+  padding-left:30px;
 }
 
 .overlay h2 {
   margin: 0;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 .overlay button {
-  margin-top: 16px;
+  margin-top: 0px;
   padding: 10px 20px;
   background-color: white;
   color: black;
   border: none;
   border-radius: 5rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight:500;
   cursor: pointer;
   transition: background-color 0.2s;
 }
