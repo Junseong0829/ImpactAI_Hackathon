@@ -71,6 +71,7 @@
   color: #333333;
   width: 30%;
   text-align: center;
+  border: none;
 }
 
 .bias-bar {
@@ -83,14 +84,17 @@
 
 .bias-segment.left {
   background-color: #cc3333;
+  border: none;
 }
 
 .bias-segment.center {
   background-color: #cccccc;
+  border: none;
 }
 
 .bias-segment.right {
   background-color: #1e40af;
+  border: none;
 }
 
 .bias-graph {
