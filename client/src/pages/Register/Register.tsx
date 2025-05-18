@@ -26,7 +26,7 @@ const Register = () => {
 
       const data = await res.json();
       login(data.access_token);
-      alert('회원가입에 성공하였습니다.');
+      location.href="/";
     } catch(err) {
       alert('회원가입 실패: 입력값을 다시 확인하세요.');
       console.error(err);

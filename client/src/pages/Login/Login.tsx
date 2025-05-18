@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { useAuth } from '../../context/AuthContext';
 import "./Login.css";
-import axios from 'axios';
 
 const Login = () => {
   const {login} = useAuth();
