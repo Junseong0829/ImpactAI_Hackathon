@@ -71,7 +71,7 @@ function LeftDetail(){
                     </div>
                     <div style={{display:"flex", gap:"20px",alignItems:"center"}}>
                         <PrettyProgressBar
-                            value={30}
+                            value={20}
                             height="50px"
                             fillColor="#a9d5ff"         
                             backgroundColor="#dfdfdf"

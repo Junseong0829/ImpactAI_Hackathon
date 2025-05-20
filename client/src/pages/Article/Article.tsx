@@ -5,7 +5,7 @@ function Article(){
     return(
         <>
             <div style={{padding:"10px", gap:"20px"}}>
-                <h1 style={{fontSize:"50px"}}>도널드 트럼프의 관세 정책</h1>
+                <h1 style={{fontSize:"50px"}}>러시아 우크라이나 공격</h1>
                 <div className="container">
                    <div className="left">
                     <span style={{fontSize:"25px"}}>From the Left</span>

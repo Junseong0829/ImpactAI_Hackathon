@@ -4,7 +4,7 @@ import logo from "./assets/Augora.png";
 import "./Header.css";
 
 function Header(){
-  const {isLoggedIn, logout } = useAuth();
+  const {isLoggedIn} = useAuth();
 
   return(
     <header className="custom-header">

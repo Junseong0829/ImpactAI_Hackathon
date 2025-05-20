@@ -15,7 +15,7 @@ const newsItems = [
     link: "https://example.com/article1"
   },
   {
-    title: "러-우 전쟁 종전 협상",
+    title: "러시아 우크라이나 공격",
     image: img2,
     link: "https://example.com/article2"
   },
